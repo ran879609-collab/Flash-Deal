@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ApiService } from '../../services/api';
+import { SupabaseService } from '../../services/supabase';
 import { AuditLog, ImportJob, UserProfile } from '../../types';
 import {
   Database,
@@ -14,6 +15,8 @@ import {
   AlertTriangle,
   RefreshCw,
   ShieldAlert,
+  Cloud,
+  Key,
 } from 'lucide-react';
 
 interface Props {
@@ -33,10 +36,28 @@ export const DataManagementModal: React.FC<Props> = ({
   activityCount,
   onDataReset,
 }) => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'audit' | 'jobs' | 'danger'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'supabase' | 'jobs' | 'audit' | 'danger'>('overview');
   const [auditLogs, setAuditLogs] = useState<AuditLog[]>([]);
   const [importJobs, setImportJobs] = useState<ImportJob[]>([]);
   const [isLoadingLogs, setIsLoadingLogs] = useState(false);
+
+  // Supabase Cloud Config State
+  const [supabaseUrl, setSupabaseUrl] = useState(() => {
+    return localStorage.getItem('cyclepro_supabase_config_v3')
+      ? JSON.parse(localStorage.getItem('cyclepro_supabase_config_v3') || '{}').url || ''
+      : '';
+  });
+  const [supabaseKey, setSupabaseKey] = useState(() => {
+    return localStorage.getItem('cyclepro_supabase_config_v3')
+      ? JSON.parse(localStorage.getItem('cyclepro_supabase_config_v3') || '{}').anonKey || ''
+      : '';
+  });
+  const [isSupabaseEnabled, setIsSupabaseEnabled] = useState(() => {
+    return localStorage.getItem('cyclepro_supabase_config_v3')
+      ? JSON.parse(localStorage.getItem('cyclepro_supabase_config_v3') || '{}').enabled || false
+      : false;
+  });
+  const [supabaseSavedMsg, setSupabaseSavedMsg] = useState<string | null>(null);
 
   // Danger clear state
   const [confirmInput, setConfirmInput] = useState('');
@@ -116,6 +137,30 @@ export const DataManagementModal: React.FC<Props> = ({
     reader.readAsText(file);
   };
 
+  // Save Supabase Configuration
+  const handleSaveSupabase = () => {
+    if (isSupabaseEnabled && (!supabaseUrl.trim() || !supabaseKey.trim())) {
+      setSupabaseSavedMsg('⚠️ 请完整填写 Supabase Project URL 与 Anon Key');
+      return;
+    }
+
+    SupabaseService.setConfig({
+      url: supabaseUrl.trim(),
+      anonKey: supabaseKey.trim(),
+      enabled: isSupabaseEnabled,
+    });
+
+    setSupabaseSavedMsg(
+      isSupabaseEnabled
+        ? '✅ Supabase 云端数据库配置已保存！跨设备同步已开启。'
+        : '已关闭 Supabase 云端同步，切换为本地存储模式。'
+    );
+
+    setTimeout(() => {
+      onDataReset();
+    }, 800);
+  };
+
   // Clear Storage Execution
   const handleExecuteClear = async () => {
     if (confirmInput.trim() !== 'CONFIRM_CLEAR_ALL') {
@@ -182,6 +227,17 @@ export const DataManagementModal: React.FC<Props> = ({
           >
             <Database className="w-4 h-4" />
             存储概览与备份
+          </button>
+          <button
+            onClick={() => setActiveTab('supabase')}
+            className={`py-3 px-3.5 border-b-2 transition flex items-center gap-1.5 ${
+              activeTab === 'supabase'
+                ? 'border-blue-600 text-blue-700 font-semibold'
+                : 'border-transparent text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            <Cloud className="w-4 h-4 text-sky-500" />
+            云端数据库 (Supabase)
           </button>
           <button
             onClick={() => setActiveTab('jobs')}
@@ -283,6 +339,91 @@ export const DataManagementModal: React.FC<Props> = ({
                   <div className="p-3 bg-blue-50 border border-blue-200 text-blue-800 rounded-xl text-xs flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
                     <span>{restoreMsg}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* TAB: SUPABASE CLOUD DATABASE */}
+          {activeTab === 'supabase' && (
+            <div className="space-y-5">
+              <div className="p-4 bg-sky-50/70 border border-sky-200/80 rounded-xl space-y-2">
+                <div className="flex items-center gap-2 text-sky-900 font-semibold text-sm">
+                  <Cloud className="w-5 h-5 text-sky-600" />
+                  Supabase 生产级关系型数据库连接
+                </div>
+                <p className="text-xs text-sky-800 leading-relaxed">
+                  为什么换了浏览器或设备无法登录同一账户？因为当应用部署在 GitHub Pages 等静态托管环境时，数据默认仅保存在当前浏览器的 localStorage 中。
+                  接入 <strong>Supabase (PostgreSQL)</strong> 后，系统将直接在云端验证账户与读写数据，支持跨电脑、跨浏览器秒级同步！
+                </p>
+              </div>
+
+              <div className="p-5 border border-slate-200 rounded-xl bg-white space-y-4">
+                <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                  <div>
+                    <span className="font-semibold text-slate-900 block text-xs">
+                      启用 Supabase 跨设备云同步
+                    </span>
+                    <span className="text-[11px] text-slate-500">
+                      开启后所有账户注册、登录与数据存取将直连 Supabase
+                    </span>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={isSupabaseEnabled}
+                    onChange={(e) => setIsSupabaseEnabled(e.target.checked)}
+                    className="w-5 h-5 text-blue-600 rounded cursor-pointer"
+                  />
+                </div>
+
+                <div className="space-y-3">
+                  <div>
+                    <label className="text-xs font-semibold text-slate-700 block mb-1">
+                      Supabase Project URL
+                    </label>
+                    <input
+                      type="text"
+                      value={supabaseUrl}
+                      onChange={(e) => setSupabaseUrl(e.target.value)}
+                      placeholder="https://xyzcompany.supabase.co"
+                      disabled={!isSupabaseEnabled}
+                      className="w-full px-3 py-2 text-xs font-mono bg-slate-50 border border-slate-300 rounded-xl outline-none focus:bg-white focus:border-blue-500 transition disabled:opacity-50"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="text-xs font-semibold text-slate-700 block mb-1">
+                      Supabase Project Anon Public Key (anon key)
+                    </label>
+                    <input
+                      type="password"
+                      value={supabaseKey}
+                      onChange={(e) => setSupabaseKey(e.target.value)}
+                      placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                      disabled={!isSupabaseEnabled}
+                      className="w-full px-3 py-2 text-xs font-mono bg-slate-50 border border-slate-300 rounded-xl outline-none focus:bg-white focus:border-blue-500 transition disabled:opacity-50"
+                    />
+                  </div>
+                </div>
+
+                <div className="pt-2 flex items-center justify-between">
+                  <button
+                    onClick={handleSaveSupabase}
+                    className="inline-flex items-center gap-1.5 px-5 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xs transition cursor-pointer"
+                  >
+                    <CheckCircle2 className="w-4 h-4" />
+                    保存配置并立即测试连接
+                  </button>
+                  <span className="text-[11px] text-slate-400">
+                    建表脚本已位于：migrations/001_initial_schema.sql
+                  </span>
+                </div>
+
+                {supabaseSavedMsg && (
+                  <div className="p-3 bg-blue-50 border border-blue-200 text-blue-800 rounded-xl text-xs flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+                    <span>{supabaseSavedMsg}</span>
                   </div>
                 )}
               </div>

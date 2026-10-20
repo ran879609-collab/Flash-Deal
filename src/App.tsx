@@ -68,7 +68,7 @@ export default function App() {
     year: '',
     startWeek: '',
     endWeek: '',
-    periodCount: 6,
+    periodCount: 4,
   });
 
   // --- Modals State ---
@@ -145,15 +145,17 @@ export default function App() {
     return getGlobalLatestWeek(allWeeks);
   }, [allWeeks]);
 
-  // Initialize filter defaults when allWeeks load
+  // Initialize filter defaults when allWeeks load (default latest 4 cycles: e.g. 38 -> 35, 36, 37, 38)
   useEffect(() => {
     if (allWeeks.length > 0) {
       const latest = allWeeks[allWeeks.length - 1];
+      const count = Number(filters.periodCount) || 4;
+      const calculatedStart = Math.max(1, latest.week - (count - 1));
       setFilters((prev) => ({
         ...prev,
         year: prev.year || latest.year,
         endWeek: prev.endWeek || latest.week,
-        startWeek: prev.startWeek || Math.max(1, latest.week - 5),
+        startWeek: prev.startWeek || calculatedStart,
       }));
     }
   }, [allWeeks]);
@@ -712,12 +714,15 @@ export default function App() {
             <span className="text-slate-500 text-[11px] font-medium">显示:</span>
             <select
               value={filters.periodCount}
-              onChange={(e) =>
+              onChange={(e) => {
+                const newCount = Number(e.target.value);
+                const currentEnd = Number(filters.endWeek) || 52;
                 setFilters((prev) => ({
                   ...prev,
-                  periodCount: Number(e.target.value),
-                }))
-              }
+                  periodCount: newCount,
+                  startWeek: Math.max(1, currentEnd - (newCount - 1)),
+                }));
+              }}
               className="px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-xl outline-none focus:bg-white focus:border-blue-500 font-mono font-medium text-blue-700"
             >
               <option value="4">4</option>

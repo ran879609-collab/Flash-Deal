@@ -6,6 +6,7 @@ import {
   AuditLog,
   UserRole,
 } from '../types';
+import { SupabaseService } from './supabase';
 
 const TOKEN_KEY = 'cyclepro_auth_token_v3';
 const USER_KEY = 'cyclepro_current_user_v3';
@@ -53,7 +54,6 @@ const DEFAULT_PRODUCTS = [
   { originalSku: 'DC3200-Black-L', splitSku: 'DC3200', type: 'I-发光项圈', itemId: '2710278597' },
 ];
 
-// Helper to generate seed activities
 function generateDefaultActivities() {
   const weeks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
   const skus = ['TZ-P0211-BLUE', 'TZ-P0211-GREEN', 'PET1005-Black-XS', 'PET1005-Black-S', 'PET1005-Blue-M', 'DC3200-Black-L'];
@@ -116,10 +116,26 @@ export class ApiService {
   }
 
   /**
+   * Generates possible API URLs taking into account:
+   * 1. Relative to current base URL (e.g. /Flash-Deal/api/...)
+   * 2. Root API (e.g. /api/...)
+   */
+  private static getApiUrls(endpoint: string): string[] {
+    const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+    const base = (import.meta.env.BASE_URL || '/').replace(/\/+$/, '');
+
+    const urls: string[] = [];
+    if (base && base !== '') {
+      urls.push(`${base}/api${cleanEndpoint}`);
+    }
+    urls.push(`/api${cleanEndpoint}`);
+    return Array.from(new Set(urls));
+  }
+
+  /**
    * Resilient request method:
-   * First tries the fullstack Express backend.
-   * If backend is not available, or returns 405 (e.g. Vite static preview),
-   * falls back seamlessly to the client-side persistent storage engine.
+   * Attempts endpoints on backend server.
+   * If all fail (e.g. on GitHub Pages static host), flags isFallback: true.
    */
   private static async request<T>(
     endpoint: string,
@@ -135,45 +151,53 @@ export class ApiService {
       headers['Authorization'] = `Bearer ${this.token}`;
     }
 
-    try {
-      const res = await fetch(`/api${endpoint}`, {
-        ...options,
-        headers,
-      });
+    const candidateUrls = this.getApiUrls(endpoint);
+    let lastError: any = null;
 
-      // If server returns 405 Method Not Allowed (e.g. static preview), trigger client fallback
-      if (res.status === 405 || res.status === 404) {
-        return { data: null as any, isFallback: true };
-      }
+    for (const url of candidateUrls) {
+      try {
+        const res = await fetch(url, {
+          ...options,
+          headers,
+        });
 
-      if (!res.ok) {
-        let errorMsg = `请求失败 (${res.status})`;
-        try {
-          const data = await res.json();
-          if (data && data.error) {
-            errorMsg = data.error;
-          }
-        } catch {
-          // keep errorMsg
+        // 405 or 404 means the static host intercepted or route not handled
+        if (res.status === 405 || res.status === 404) {
+          continue; // try next candidate URL
         }
-        throw new Error(errorMsg);
-      }
 
-      const json = await res.json();
-      return { data: json as T, isFallback: false };
-    } catch (err: any) {
-      // If network fails entirely, allow fallback
-      if (err.name === 'TypeError' || err.message?.includes('fetch') || err.message?.includes('Failed to fetch')) {
-        return { data: null as any, isFallback: true };
+        if (!res.ok) {
+          let errorMsg = `请求失败 (${res.status})`;
+          try {
+            const data = await res.json();
+            if (data && data.error) {
+              errorMsg = data.error;
+            }
+          } catch {
+            // keep errorMsg
+          }
+          throw new Error(errorMsg);
+        }
+
+        const json = await res.json();
+        return { data: json as T, isFallback: false };
+      } catch (err: any) {
+        lastError = err;
+        if (err.message && !err.message.includes('fetch') && !err.message.includes('405') && !err.message.includes('404')) {
+          // Business error from backend like "邮箱或密码错误"
+          throw err;
+        }
       }
-      throw err;
     }
+
+    // If all URLs returned 404/405 or network failed, we are in static hosting mode (e.g. GitHub Pages)
+    return { data: null as any, isFallback: true };
   }
 
   // ==========================================
-  // Client-Side Resilient Fallback Storage Helpers
+  // Client-Side Users Storage & Fallback
   // ==========================================
-  private static getStoredUsers(): Array<UserProfile & { password?: string }> {
+  public static getStoredUsers(): Array<UserProfile & { password?: string }> {
     try {
       const raw = localStorage.getItem(USERS_STORAGE_KEY);
       const parsed = raw ? JSON.parse(raw) : [];
@@ -183,7 +207,7 @@ export class ApiService {
     }
   }
 
-  private static saveRegisteredUser(user: UserProfile & { password?: string }): void {
+  public static saveRegisteredUser(user: UserProfile & { password?: string }): void {
     try {
       const raw = localStorage.getItem(USERS_STORAGE_KEY);
       const parsed = raw ? JSON.parse(raw) : [];
@@ -195,12 +219,80 @@ export class ApiService {
   }
 
   // ==========================================
+  // Cross-Browser Account Sync Key
+  // ==========================================
+  public static exportAccountSyncCode(): string {
+    const currentUser = localStorage.getItem(USER_KEY);
+    const users = localStorage.getItem(USERS_STORAGE_KEY);
+    const prods = localStorage.getItem(PRODUCTS_STORAGE_KEY);
+    const acts = localStorage.getItem(ACTIVITIES_STORAGE_KEY);
+
+    const payload = {
+      v: 3,
+      time: Date.now(),
+      currentUser: currentUser ? JSON.parse(currentUser) : null,
+      users: users ? JSON.parse(users) : [],
+      productsCount: prods ? JSON.parse(prods).length : 0,
+    };
+
+    return btoa(encodeURIComponent(JSON.stringify(payload)));
+  }
+
+  public static importAccountSyncCode(code: string): { user: UserProfile } {
+    try {
+      const decoded = decodeURIComponent(atob(code.trim()));
+      const parsed = JSON.parse(decoded);
+      if (!parsed.currentUser) {
+        throw new Error('无效的同步密钥：未包含有效用户身份');
+      }
+
+      const users = this.getStoredUsers();
+      if (Array.isArray(parsed.users)) {
+        parsed.users.forEach((u: any) => {
+          if (!users.some((x) => x.email === u.email)) {
+            this.saveRegisteredUser(u);
+          }
+        });
+      }
+
+      this.setToken(`sync_token_${Date.now()}`);
+      localStorage.setItem(USER_KEY, JSON.stringify(parsed.currentUser));
+      return { user: parsed.currentUser };
+    } catch (err: any) {
+      throw new Error(`同步码解析失败: ${err.message || '请确认同步码完整复制'}`);
+    }
+  }
+
+  // ==========================================
   // 1. Authentication (Login, Register, Me)
   // ==========================================
   public static async login(
     email: string,
     password: string
   ): Promise<{ user: UserProfile; token: string }> {
+    // 1. Try Supabase if configured
+    if (SupabaseService.isConfigured()) {
+      try {
+        const suUser = await SupabaseService.findUserByEmail(email);
+        if (suUser) {
+          const profile: UserProfile = {
+            id: suUser.id,
+            email: suUser.email,
+            name: suUser.name,
+            role: suUser.role,
+            department: suUser.department,
+          };
+          const token = `supabase_token_${Date.now()}`;
+          this.setToken(token);
+          localStorage.setItem(USER_KEY, JSON.stringify(profile));
+          return { user: profile, token };
+        }
+      } catch (err) {
+        console.warn('Supabase login check failed', err);
+      }
+    }
+
+    // 2. Try Backend Server (e.g. AI Studio Dev Server or Self-hosted Node Server)
     try {
       const { data, isFallback } = await this.request<{ user: UserProfile; token: string }>(
         '/auth/login',
@@ -216,19 +308,21 @@ export class ApiService {
         return data;
       }
     } catch (err: any) {
-      if (!err.message?.includes('405')) {
+      if (!err.message?.includes('405') && !err.message?.includes('404')) {
         throw err;
       }
     }
 
-    // Client-side Fallback
+    // 3. Fallback to Local Persistent User Store (e.g. for GitHub Pages)
     const users = this.getStoredUsers();
     const matched = users.find(
       (u) => u.email.toLowerCase() === email.trim().toLowerCase()
     );
 
     if (!matched || (matched.password && matched.password !== password)) {
-      throw new Error('邮箱或密码错误，请核对后重试');
+      throw new Error(
+        '邮箱或密码错误，请核对后重试。（提示：若在 GitHub Pages 纯静态站点下更换浏览器，可通过「跨设备同步码」一键导入登录凭证，或连接 Supabase 云端数据库）'
+      );
     }
 
     const { password: _, ...safeProfile } = matched;
@@ -250,6 +344,28 @@ export class ApiService {
       throw new Error('请完整填写邮箱、密码与真实姓名');
     }
 
+    // 1. Try Supabase if configured
+    if (SupabaseService.isConfigured()) {
+      try {
+        const suProfile = await SupabaseService.registerUser({
+          email,
+          passwordHash: password,
+          name,
+          role,
+          department,
+        });
+        if (suProfile) {
+          const token = `supabase_token_${Date.now()}`;
+          this.setToken(token);
+          localStorage.setItem(USER_KEY, JSON.stringify(suProfile));
+          return { user: suProfile, token };
+        }
+      } catch (err: any) {
+        console.warn('Supabase registration failed, trying backend/local', err);
+      }
+    }
+
+    // 2. Try Backend Server
     try {
       const { data, isFallback } = await this.request<{ user: UserProfile; token: string }>(
         '/auth/register',
@@ -265,12 +381,12 @@ export class ApiService {
         return data;
       }
     } catch (err: any) {
-      if (!err.message?.includes('405')) {
+      if (!err.message?.includes('405') && !err.message?.includes('404')) {
         throw err;
       }
     }
 
-    // Client-side Fallback
+    // 3. Fallback to Local Storage (GitHub Pages mode)
     const users = this.getStoredUsers();
     const exists = users.some(
       (u) => u.email.toLowerCase() === email.trim().toLowerCase()
@@ -314,7 +430,6 @@ export class ApiService {
       return JSON.parse(localUserRaw);
     }
 
-    // Default to manager
     const defaultUser = DEFAULT_USERS[1];
     const { password, ...safeUser } = defaultUser;
     localStorage.setItem(USER_KEY, JSON.stringify(safeUser));
@@ -364,6 +479,29 @@ export class ApiService {
     activities: ActivityRecord[];
     serverTime: string;
   }> {
+    // 1. Try Supabase if configured
+    if (SupabaseService.isConfigured()) {
+      try {
+        const [suProducts, suActivities] = await Promise.all([
+          SupabaseService.fetchProducts('u_supabase'),
+          SupabaseService.fetchActivities('u_supabase'),
+        ]);
+
+        if (suProducts && suActivities) {
+          localStorage.setItem(PRODUCTS_STORAGE_KEY, JSON.stringify(suProducts));
+          localStorage.setItem(ACTIVITIES_STORAGE_KEY, JSON.stringify(suActivities));
+          return {
+            products: suProducts,
+            activities: suActivities,
+            serverTime: new Date().toISOString(),
+          };
+        }
+      } catch (err) {
+        console.warn('Supabase fetch overview failed, falling back', err);
+      }
+    }
+
+    // 2. Try Backend Server
     try {
       const { data, isFallback } = await this.request<{
         products: ProductRecord[];
@@ -372,7 +510,6 @@ export class ApiService {
       }>('/data/overview');
 
       if (!isFallback && data) {
-        // Also cache locally for seamless offline capability
         localStorage.setItem(PRODUCTS_STORAGE_KEY, JSON.stringify(data.products));
         localStorage.setItem(ACTIVITIES_STORAGE_KEY, JSON.stringify(data.activities));
         return data;
@@ -381,7 +518,7 @@ export class ApiService {
       // fallback
     }
 
-    // Fallback to local storage or demo data
+    // 3. Fallback to Local Storage / Demo Data
     const prodsRaw = localStorage.getItem(PRODUCTS_STORAGE_KEY);
     const actsRaw = localStorage.getItem(ACTIVITIES_STORAGE_KEY);
 

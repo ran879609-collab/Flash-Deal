@@ -4793,24 +4793,24 @@
       "updatedAt": "2026-10-20T02:23:12.316Z"
     },
     {
-      "id": "prod_1792463051815_dsyiqt",
+      "id": "prod_1792464494201_boy60l",
       "userId": "test_user_alpha",
       "originalSku": "ALPHA-001",
       "splitSku": "",
       "type": "AlphaType",
       "itemId": "",
-      "createdAt": "2026-10-20T02:24:11.814Z",
-      "updatedAt": "2026-10-20T02:24:11.814Z"
+      "createdAt": "2026-10-20T02:48:14.201Z",
+      "updatedAt": "2026-10-20T02:48:14.201Z"
     },
     {
-      "id": "prod_1792463051815_kslybf",
+      "id": "prod_1792464494202_ggrweh",
       "userId": "test_user_beta",
       "originalSku": "BETA-001",
       "splitSku": "",
       "type": "BetaType",
       "itemId": "",
-      "createdAt": "2026-10-20T02:24:11.815Z",
-      "updatedAt": "2026-10-20T02:24:11.815Z"
+      "createdAt": "2026-10-20T02:48:14.202Z",
+      "updatedAt": "2026-10-20T02:48:14.202Z"
     }
   ],
   "activities": [

@@ -26,16 +26,17 @@ async function startServer() {
   app.use(express.json({ limit: '100mb' }));
   app.use(express.urlencoded({ extended: true, limit: '100mb' }));
 
-  // API Router mounting (with and without trailing slashes)
+  // API Router mounting (supporting both root /api and base path /Flash-Deal/api)
   app.use('/api', apiRouter);
+  app.use('/Flash-Deal/api', apiRouter);
 
   // Health check route
-  app.get('/api/health', (req, res) => {
+  app.get(['/api/health', '/Flash-Deal/api/health'], (req, res) => {
     res.json({ status: 'ok', time: new Date().toISOString() });
   });
 
-  // CRITICAL: Catch-all for unhandled /api/* requests so they NEVER fall through to Vite's static middleware (which emits 405)
-  app.all('/api/*', (req, res) => {
+  // Catch-all for unhandled /api/* and /Flash-Deal/api/* requests
+  app.all(['/api/*', '/Flash-Deal/api/*'], (req, res) => {
     res.status(404).json({ error: `API 接口未找到: ${req.method} ${req.path}` });
   });
 
