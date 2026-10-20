@@ -11,16 +11,32 @@ async function startServer() {
   const PORT = parseInt(process.env.PORT || '3000', 10);
   const isProduction = process.env.NODE_ENV === 'production';
 
+  // Enable CORS & Preflight handling
+  app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept');
+    if (req.method === 'OPTIONS') {
+      return res.sendStatus(200);
+    }
+    next();
+  });
+
   // Body parser for JSON with large limit for 50,000+ records import
   app.use(express.json({ limit: '100mb' }));
   app.use(express.urlencoded({ extended: true, limit: '100mb' }));
 
-  // API Router
+  // API Router mounting (with and without trailing slashes)
   app.use('/api', apiRouter);
 
   // Health check route
   app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', time: new Date().toISOString() });
+  });
+
+  // CRITICAL: Catch-all for unhandled /api/* requests so they NEVER fall through to Vite's static middleware (which emits 405)
+  app.all('/api/*', (req, res) => {
+    res.status(404).json({ error: `API 接口未找到: ${req.method} ${req.path}` });
   });
 
   if (!isProduction) {

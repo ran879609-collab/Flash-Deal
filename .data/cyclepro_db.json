@@ -29,6 +29,46 @@
       "passwordHash": "ba691f15ab47fab7a397bf288837640fd05c70849dfb3d6a36d0a4c0919e0a76",
       "createdAt": "2026-10-20T02:00:26.948Z",
       "updatedAt": "2026-10-20T02:00:26.948Z"
+    },
+    {
+      "id": "u_1792462830043_27xtj",
+      "email": "test@example.com",
+      "name": "Test User",
+      "role": "manager",
+      "department": "运营中心",
+      "passwordHash": "112340460974d9c9f615e815b860ad5bd71057ccc27d1c6a77a4e1c3041752e0",
+      "createdAt": "2026-10-20T02:20:30.043Z",
+      "updatedAt": "2026-10-20T02:20:30.043Z"
+    },
+    {
+      "id": "u_1792462882363_gei76",
+      "email": "test2@example.com",
+      "name": "Test User 2",
+      "role": "manager",
+      "department": "运营中心",
+      "passwordHash": "112340460974d9c9f615e815b860ad5bd71057ccc27d1c6a77a4e1c3041752e0",
+      "createdAt": "2026-10-20T02:21:22.363Z",
+      "updatedAt": "2026-10-20T02:21:22.363Z"
+    },
+    {
+      "id": "u_1792462964568_a1xm1",
+      "email": "ran879609@gmail.com",
+      "name": "ss",
+      "role": "admin",
+      "department": "电商运营部",
+      "passwordHash": "48fabf5ead3a49077f41615b107a887f7b1a1fa7c8ae8e6e8a984aefc778be81",
+      "createdAt": "2026-10-20T02:22:44.568Z",
+      "updatedAt": "2026-10-20T02:22:44.568Z"
+    },
+    {
+      "id": "u_1792463047743_gq6vr",
+      "email": "ran_test@cyclepro.com",
+      "name": "Ran",
+      "role": "manager",
+      "department": "运营中心",
+      "passwordHash": "2e72b26e7cdb92d3f96aa06756060a641b019aa6d37dcea763e9c8bc86a7c031",
+      "createdAt": "2026-10-20T02:24:07.743Z",
+      "updatedAt": "2026-10-20T02:24:07.743Z"
     }
   ],
   "products": [
@@ -273,24 +313,4504 @@
       "updatedAt": "2026-10-20T02:00:26.948Z"
     },
     {
-      "id": "prod_1792461680975_gux7j5",
+      "id": "prod_1792462992316_hqy20o",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "2in1-915-Black",
+      "splitSku": "2in1",
+      "type": "E-训狗器",
+      "itemId": "2748563753",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_dtuy7s",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "862-20 Gauge WIRE",
+      "splitSku": "862-20 Gauge WIRE",
+      "type": "F-电子围栏配件",
+      "itemId": "1250282409",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_5ihyli",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC3200-Black-L",
+      "splitSku": "DC3200",
+      "type": "I-发光项圈",
+      "itemId": "2710278597",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_0n44u7",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC3200-Black-M",
+      "splitSku": "DC3200",
+      "type": "I-发光项圈",
+      "itemId": "1056313268",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_sdcvqa",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC3200-Black-S",
+      "splitSku": "DC3200",
+      "type": "I-发光项圈",
+      "itemId": "2794086618",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_y5b7kh",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC3200-Blue-L",
+      "splitSku": "DC3200",
+      "type": "I-发光项圈",
+      "itemId": "1673656579",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_lig15m",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC3200-Blue-M",
+      "splitSku": "DC3200",
+      "type": "I-发光项圈",
+      "itemId": "1143575327",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_f0bjlo",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC3200-Blue-S",
+      "splitSku": "DC3200",
+      "type": "I-发光项圈",
+      "itemId": "1169081727",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_rwyp84",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-BLUE-M1",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "244957244",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_idmpcz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-ORANGE-S1",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "540291259",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_m7zojg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-Purple-L",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "584308992",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_f6n9jh",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-Purple-M",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "1095518685",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_p44rng",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-Purple-S",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "1562559437",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_hzprwx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-RED-L1",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "680147610",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_2mtidi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-RED-M1",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "618592075",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_v48k0q",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-RED-S1",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "241222330",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_l9czma",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-BLUEL1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "326996641",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_jxqhag",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-BLUEM1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "340311679",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_hq7rrz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-BLUES1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "456506192",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_rxp7wi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-BLUEXS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "313394129",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_irbwzy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-GREENL1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "504813877",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_cw988h",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-GREENM1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "728164971",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_z699yb",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-GREENS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "952957106",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_05xten",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-GREENXS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "532110132",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_plst2y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-ORANGEL1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "278536954",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_5l2vu5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-ORANGEM1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "907143940",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_86btd1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-ORANGES1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "365534584",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_nks619",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-ORANGEXS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "484630583",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_nnjf5t",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-PINKL1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "123394208",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_qy6uox",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-PINKM1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "256817260",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_qacrg5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-PINKS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "962083033",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xdg8z6",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-PINKXS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "290046678",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_lekvjg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-Purple-L",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "1089460993",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_1k2v9s",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-Purple-M",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "1378044564",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_q1k5ag",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-Purple-S",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "1972088339",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_7adcez",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-Purple-XS",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "1143111499",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_f6h3rv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-REDL1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "400525333",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_e1zto9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-REDM1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "435100859",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_1rez3m",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-REDS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "659148686",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xl13di",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC6100-REDXS1",
+      "splitSku": "DC6100",
+      "type": "I-发光项圈",
+      "itemId": "972246168",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_822dro",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC630V-Black",
+      "splitSku": "DC630V",
+      "type": "H-止吠器",
+      "itemId": "262617476",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_rihhu5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC630V-Green",
+      "splitSku": "DC630V",
+      "type": "H-止吠器",
+      "itemId": "423610790",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_bsbrkz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC651-Black",
+      "splitSku": "DC651",
+      "type": "H-止吠器",
+      "itemId": "1387235962",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_wd41yx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC651-Pink",
+      "splitSku": "DC651",
+      "type": "H-止吠器",
+      "itemId": "1846715940",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_g47k9j",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC681V",
+      "splitSku": "DC681V",
+      "type": "H-止吠器",
+      "itemId": "123923892",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_y2rzp1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "G713",
+      "splitSku": "G713",
+      "type": "GPS定位器",
+      "itemId": "5294689584",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_i53a8r",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "NL02T",
+      "splitSku": "NL02T",
+      "type": "E-小夜灯",
+      "itemId": "1522306759",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_0vjq7f",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0105-BLABK",
+      "splitSku": "P0105",
+      "type": "安全带",
+      "itemId": "1473694402",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_u41i8k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0211-Black",
+      "splitSku": "P0211",
+      "type": "D-狗咬胶",
+      "itemId": "2753050795",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_cqcda5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0211-Pink",
+      "splitSku": "P0211",
+      "type": "D-狗咬胶",
+      "itemId": "2674625320",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_01rboi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0302-Black&Green",
+      "splitSku": "P0302",
+      "type": "J-响片",
+      "itemId": "541005691",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_r8jnc2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0302-Blue&Red",
+      "splitSku": "P0302",
+      "type": "J-响片",
+      "itemId": "847291819",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_kbiwc9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0302-Blue&White",
+      "splitSku": "P0302",
+      "type": "J-响片",
+      "itemId": "900369055",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_z2pwa8",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0306-Black&Blue",
+      "splitSku": "P0306",
+      "type": "J-响片",
+      "itemId": "1588931776",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_w4f5hf",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0306-Black&Blue&Orange",
+      "splitSku": "P0306",
+      "type": "J-响片",
+      "itemId": "1476890852",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_strkhu",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P0306-Green&Purple",
+      "splitSku": "P0306",
+      "type": "J-响片",
+      "itemId": "1404929753",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_upgjgy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Astronaut-L",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1745184543",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_jn0o6w",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Astronaut-M",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1871751041",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_3qg46n",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Astronaut-S",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1893443703",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_mqzns2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Bohemia-L",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1697120368",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_nr5blx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Bohemia-M",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1558275645",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_q2to8s",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Bohemia-S",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1772554283",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_yra10c",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Geometry-L",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1370391773",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_lese1t",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Geometry-M",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1585116111",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_dri43o",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Geometry-S",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1951516938",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_fdapab",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Hexagon-L",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1671685239",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_gr135v",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Hexagon-M",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1338257749",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_20amah",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Hexagon-S",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1412898050",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_8un685",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Irregular-L",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1761518231",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_er6ubo",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Irregular-M",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1367865479",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_b4w9md",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Irregular-S",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1220574144",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_0vsa36",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Plaid-L",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1107573725",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_2ym6ps",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Plaid-M",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1828491245",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ieniqd",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1017-Plaid-S",
+      "splitSku": "P1017",
+      "type": "B-项圈",
+      "itemId": "1441066216",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_qbliyr",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Blue-S",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "603110233",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_d8txa1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Blue-XS",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "990680331",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_5cyb73",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Orange-S",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "902319309",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_sl4du4",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Orange-XS",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "613055927",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_e4em9b",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Purple-S",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "933875036",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_eayop0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Purple-XS",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "450975259",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_vgdhzy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Red-S",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "455672233",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_b6kk8p",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P1105-Red-XS",
+      "splitSku": "P1105",
+      "type": "B-项圈",
+      "itemId": "276855424",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xs2r8y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Blue-L",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5327011761",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_6x58p0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Blue-M",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5268285605",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_qdsrn6",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Blue-S",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5268235643",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_2d1o19",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Blue-XL",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5260777477",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xk5d8n",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Green-L",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5337868708",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_17f4gl",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Green-M",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5322358528",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_h2ywuc",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Green-S",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5261228834",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ttq2f7",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Green-XL",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5336757968",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_pmccmw",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Pink-L",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5262975477",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_p8eb6z",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Pink-M",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5337866936",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_wsv4hk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Pink-S",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5259134420",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_wiaqt0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Pink-XL",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5263583021",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_wc00u4",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Purple-L",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5337868707",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_5oymfj",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Purple-M",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5259194285",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_cjyryu",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Purple-S",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5267089947",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_11efk8",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Purple-XL",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5336909395",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_rhwtwl",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Red-L",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5322308030",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ezwxqt",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Red-M",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5333910532",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_sdauxv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Red-S",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5259626038",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_s1nwqe",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005C-Red-XL",
+      "splitSku": "P3005C",
+      "type": "A-胸背带",
+      "itemId": "5263583020",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_kcvf6n",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Black-L",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5242337449",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_axmal2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Black-M",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5236695806",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_hqdt2j",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Black-S",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5285162841",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_b8f1uh",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Black-XL",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5287420930",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_visoj0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Blue-L",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5232876275",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_vikrpe",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Blue-M",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5242387343",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_w3lgqv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Blue-S",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5294413865",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ndnxm1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Blue-XL",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5294416424",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_kyvvel",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Green-L",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5291709629",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_sjss5o",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Green-M",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5232876274",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_4tf1dx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Green-S",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5288072371",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_1adhk8",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Green-XL",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5232876881",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_assozv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Pink-L",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5289702756",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_fd0p7u",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Pink-M",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5233541210",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_uaj8nt",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Pink-S",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5287420931",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_167o1j",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Pink-XL",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5294416425",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_doqhle",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Purple-L",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5291450526",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_guhly2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Purple-M",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5285162842",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_agkcib",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Purple-S",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5294363856",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_x90k2p",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Purple-XL",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "5288353159",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_sjpd3y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Astronaut-L",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1764537094",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_bvf6v4",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Astronaut-M",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1206565170",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ll5x0b",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Astronaut-S",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1905941157",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_dnx4dz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Astronaut-XL",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1349691040",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_teqltk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Geometry-L",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1936534141",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_32w8tu",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Geometry-M",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1176355949",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_8pkhci",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Geometry-S",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1405123659",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_zdnkwi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Geometry-XL",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1284844031",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_9ormpe",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Plaid-L",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1207334456",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_spvvcl",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Plaid-M",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1779772058",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_s1k55w",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Plaid-S",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1299436259",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_bo4q6r",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3006-Plaid-XL",
+      "splitSku": "P3006",
+      "type": "A-胸背带",
+      "itemId": "1090286126",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_6escai",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Astronaut-L",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1663428581",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_b1t4xf",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Astronaut-M",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1231187701",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_w1zrxc",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Astronaut-S",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1824913377",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_1awv3o",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Astronaut-XL",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1207324586",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_f1us59",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Geometry-L",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1221082756",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xpwlws",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Geometry-M",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1653105642",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_bnje7v",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Geometry-S",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1894624907",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_hqfvza",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Geometry-XL",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1884454125",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ks42or",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Plaid-L",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1884561133",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_pw46rn",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Plaid-M",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1234792193",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_q5ld2g",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Plaid-S",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1197582550",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_66xq3x",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3007-Plaid-XL",
+      "splitSku": "P3007",
+      "type": "A-胸背带",
+      "itemId": "1236616087",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_jw45sa",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Black-L",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1020812755",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_12s0ta",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Black-M",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1315477141",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xwdir5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Black-S",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1497488126",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_r0h04s",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Blue-L",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1368019138",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xrdub9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Blue-M",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1245540840",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_enseyb",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Blue-S",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1007713994",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_djwx6x",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Red-L",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1279003224",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_lp12rn",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Red-M",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1132751570",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_shxfv8",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3008-Red-S",
+      "splitSku": "P3008",
+      "type": "A-胸背带",
+      "itemId": "1038529478",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xb7kgs",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Black-L",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1629446743",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_96w1jv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Black-M",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1808224976",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_y2xtbr",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Black-S",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1032879452",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xjm6vo",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Black-XL",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "3185175139",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_lpmq8k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Blue-L",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1649426107",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_50f3sj",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Blue-M",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1418986678",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_3dqmod",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Blue-S",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1815814604",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_wd7v7f",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Blue-XL",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "2554189311",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_w4g619",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Red-L",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1128223584",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_p5hgb6",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Red-M",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1297466871",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_6dmjqx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Red-S",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "1755307425",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_djl6x7",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3009-Red-XL",
+      "splitSku": "P3009",
+      "type": "A-胸背带",
+      "itemId": "2853118366",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_tm55qi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLACK-L-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "617294713",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_vzz1qh",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLACK-M-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "770610969",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_oagyd1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLACK-S-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "305808141",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_1hcami",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLACK-XL-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "724382037",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_9angy5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLUE-L-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "253822515",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_6xeh94",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLUE-M-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "734224259",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_y5neik",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLUE-S-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "785700289",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_7whf8g",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLUE-XL-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "887570849",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_83wt32",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-BLUE-XS-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "777617042",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_nmdh59",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-ORANGE-L-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "346878067",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_lgg7in",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-ORANGE-M-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "110683706",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_fjvtgm",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-ORANGE-S-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "550710544",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_1qwiw1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-ORANGE-XL-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "305387650",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_uaaa7p",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-ORANGE-XS-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "537397578",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_53pax8",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-PURPLE-L-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "460872957",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_7qesbc",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-PURPLE-M-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "558684423",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_tjvs9a",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-PURPLE-S-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "446875588",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_j6ih0z",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-PURPLE-XL-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "960801396",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_v66ctn",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-PURPLE-XS-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "488676077",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_6j4x7a",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-RED-L-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "605098159",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_n51q5o",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-RED-M-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "438806353",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_k8stb8",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-RED-S-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "900690952",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_jr8ors",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000-RED-XL-1",
+      "splitSku": "PET1000",
+      "type": "B-项圈",
+      "itemId": "456351237",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_8zw7w6",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Black&Orange-L",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6661955261",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_suzj0k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Black&Orange-M",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6668619738",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_lhbuh9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Black&Orange-S",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6662061563",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_w69rte",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Black&Orange-XL",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6671960887",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_02bsp6",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Blue-L",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6689724167",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_i6x8ll",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Blue-M",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6687002476",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_mzn6tf",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Blue-S",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6657615160",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_fhs3kz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Blue-XL",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6669207677",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_cuqv4k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Purple-L",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6671823515",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_8ciy3k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Purple-M",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6662211696",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ij1qmd",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Purple-S",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6657665246",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_qm0iym",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1000S-Purple-XL",
+      "splitSku": "PET1000S",
+      "type": "B-项圈套装",
+      "itemId": "6671910982",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_zgw8mk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Black-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "131816959",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_8awom8",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Black-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "633240749",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_bxxlym",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Black-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "718219317",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_o3mwsv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Black-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "780397351",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ucff9j",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Black-XS",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "5559267016",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_sgeyk6",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Blue-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "770813547",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_dpmdmy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Blue-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "510192494",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xl4mgy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Blue-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "341312879",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_ohx1r0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Blue-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "511981609",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_3orvcm",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Blue-XS",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "5569864128",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_39j54k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Brown-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1709304924",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_8xvaiw",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Brown-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1755134344",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_edtfrq",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Brown-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1646761801",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_jg7t3b",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Brown-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1242702976",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_8ie585",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Green-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "750741058",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_o6dvou",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Green-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "512738590",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_xz8pbs",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Green-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "310571368",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_k0cbpk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Green-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "645150626",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_7sjfxh",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Pink-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "345053184",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_wp1ikv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Pink-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "319070452",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_vb3ib7",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Pink-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "966315580",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_4lex0b",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Pink-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "394458066",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_tbtejx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Pink-XS",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "5427745799",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_3kjjh6",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Purple-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1001577892",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992316_oj1suy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Purple-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1571131926",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_e20d7r",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Purple-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1235981940",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_meb8h2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Purple-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1334882175",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_h0ug49",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Purple-XS",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "5559267704",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_i6nq0i",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Red-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1398888398",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_x0yaqn",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Red-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1416235734",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_6g8z52",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Red-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1352217323",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_bg9dj3",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET1005-Red-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "1123015675",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_dx0xsd",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET687V-Blue",
+      "splitSku": "PET687V",
+      "type": "H-止吠器",
+      "itemId": "1121346910",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_b0qdta",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "RX3-Black",
+      "splitSku": "RX3",
+      "type": "H-止吠器",
+      "itemId": "1654843702",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_irqka0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "RX3-Blue",
+      "splitSku": "RX3",
+      "type": "H-止吠器",
+      "itemId": "1543183506",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_7xa7ea",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "RX5-Green",
+      "splitSku": "RX5",
+      "type": "H-止吠器",
+      "itemId": "465898577",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_57k72y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "RX5-White",
+      "splitSku": "RX5",
+      "type": "H-止吠器",
+      "itemId": "480233552",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_tbtqhp",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Black-L",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5236430843",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_045x2u",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Black-M",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5296704619",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_evpstf",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Black-S",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5296353339",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_99j1yl",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Black-XL",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5249946075",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_mxk9gz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Blue-L",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5246289256",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_vw4a2j",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Blue-M",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5301809457",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_v3p80r",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Blue-S",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5302416187",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_liy4oz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Blue-XL",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5287258550",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_l7eini",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Pink-L",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5293462283",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_lqqua0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Pink-M",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5296654828",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_6x243r",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Pink-S",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5241983574",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_xh8ikz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3005-Pink-XL",
+      "splitSku": "TC3005",
+      "type": "A-胸背带",
+      "itemId": "5248679257",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_rlrf14",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Black-L",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "2343071540",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_8657z0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Black-M",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "1371762499",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_o9xhih",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Black-S",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "2482572366",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_1khevx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Blue-L",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "1257168344",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3tz3fg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Blue-M",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "1067256162",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_bm0phe",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Blue-S",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "1758058790",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_0xnu9m",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Red-L",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "1552933331",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_cklbdk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Red-M",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "2201054239",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_aptakj",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC3008-Red-S",
+      "splitSku": "TC3008",
+      "type": "A-发光胸背带",
+      "itemId": "1151892665",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_oeb0dz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TC-391R",
+      "splitSku": "391R",
+      "type": "H-止吠器",
+      "itemId": "5041038892",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_6b2lof",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0219-Black",
+      "splitSku": "P0219",
+      "type": "D-狗咬胶",
+      "itemId": "1864669349",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_49pl0a",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0219-Red",
+      "splitSku": "P0219",
+      "type": "D-狗咬胶",
+      "itemId": "1353653314",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_cwf651",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0220-Blue",
+      "splitSku": "P0220",
+      "type": "D-狗咬胶",
+      "itemId": "1636103759",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_qoueor",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0220-Dark Green",
+      "splitSku": "P0220",
+      "type": "D-狗咬胶",
+      "itemId": "5678411438",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_lihqlh",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0220-G&P",
+      "splitSku": "P0220",
+      "type": "D-狗咬胶",
+      "itemId": "2437594292",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_hppv8n",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0220-Green",
+      "splitSku": "P0220",
+      "type": "D-狗咬胶",
+      "itemId": "3477996776",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_8j05br",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0220-Purple",
+      "splitSku": "P0220",
+      "type": "D-狗咬胶",
+      "itemId": "2529784811",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_24uvt1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0220-Red",
+      "splitSku": "P0220",
+      "type": "D-狗咬胶",
+      "itemId": "1942286848",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_x7yhjg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0221-Blue",
+      "splitSku": "P0221",
+      "type": "D-狗咬胶",
+      "itemId": "1415187608",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_x06c74",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0221-Green",
+      "splitSku": "P0221",
+      "type": "D-狗咬胶",
+      "itemId": "1463914901",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_m48u0k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-0221-Red",
+      "splitSku": "P0221",
+      "type": "D-狗咬胶",
+      "itemId": "1656113677",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_5ktkt4",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2001-Black",
+      "splitSku": "2001",
+      "type": "拉带",
+      "itemId": "1167434758",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_y7tdmy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2001-Black&Orange",
+      "splitSku": "2001",
+      "type": "拉带",
+      "itemId": "3297648881",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_5f1jot",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2001-Blue",
+      "splitSku": "2001",
+      "type": "拉带",
+      "itemId": "1655173363",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zqcfpz",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2001-Purple",
+      "splitSku": "2001",
+      "type": "拉带",
+      "itemId": "3385541364",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_8ug99p",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2001-Red",
+      "splitSku": "2001",
+      "type": "拉带",
+      "itemId": "1886495404",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_lmz3ip",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2012-Blue",
+      "splitSku": "2012",
+      "type": "拉带",
+      "itemId": "524648254",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zgpe2f",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2012-Green",
+      "splitSku": "2012",
+      "type": "拉带",
+      "itemId": "585067514",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_vyhfef",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-2012-Red",
+      "splitSku": "2012",
+      "type": "拉带",
+      "itemId": "312907467",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_n7dp8t",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-639",
+      "splitSku": "639",
+      "type": "H-止吠器",
+      "itemId": "690862441",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_m7e52e",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-862",
+      "splitSku": "862",
+      "type": "F-电子围栏",
+      "itemId": "880622762",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_q3z4hn",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-862-1",
+      "splitSku": "862",
+      "type": "F-电子围栏",
+      "itemId": "1333498137",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_iqsq3h",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-912-Black",
+      "splitSku": "912",
+      "type": "E-训狗器",
+      "itemId": "548069410",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_kty05a",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-912-Green",
+      "splitSku": "912",
+      "type": "E-训狗器",
+      "itemId": "211771989",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_nz5afk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-912-Green-2",
+      "splitSku": "912/2/1",
+      "type": "E-训狗器",
+      "itemId": "2949661868",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_x8ivcv",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-913-Black",
+      "splitSku": "913",
+      "type": "E-训狗器",
+      "itemId": "110626189",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_8yyjz3",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-913-Black-2",
+      "splitSku": "913/2/1",
+      "type": "E-训狗器",
+      "itemId": "312136856",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_40to97",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-913-Blue",
+      "splitSku": "913",
+      "type": "E-训狗器",
+      "itemId": "284710954",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_9r2pnm",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-913-Blue-2",
+      "splitSku": "913/2/1",
+      "type": "E-训狗器",
+      "itemId": "8514069716",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_1dt12d",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-915-Blue",
+      "splitSku": "915",
+      "type": "E-训狗器",
+      "itemId": "164710237",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_9lwsu2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-925-2",
+      "splitSku": "925",
+      "type": "H-止吠器",
+      "itemId": "3587502212",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_uxfono",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-F381",
+      "splitSku": "F381",
+      "type": "F-电子围栏",
+      "itemId": "2273294981",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_sn0m4r",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-F381*A-Black",
+      "splitSku": "F381*A",
+      "type": "F-电子围栏",
+      "itemId": "9697973830",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_xp8uu3",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-F381*A-Blue",
+      "splitSku": "F381*A",
+      "type": "F-电子围栏",
+      "itemId": "9710551320",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_7l2ss2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-F381*A-Orange",
+      "splitSku": "F381*A",
+      "type": "F-电子围栏",
+      "itemId": "9719612670",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_vr1iv3",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-G03",
+      "splitSku": "G03",
+      "type": "磨甲器",
+      "itemId": "2034485288",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_0dvfg2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-IC68",
+      "splitSku": "IC68",
+      "type": "探温计",
+      "itemId": "1498921473",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3l5qsi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0002",
+      "splitSku": "P0002",
+      "type": "猫梳",
+      "itemId": "1094611212",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_v6mfq4",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Black-L",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "395540665",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_y6iuqg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Black-M",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "796091323",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_qhwlny",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Black-S",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "197838015",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_n1egce",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Blue-L",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "756531636",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_pf2ix1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Blue-M",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "239329468",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_wwftbs",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Blue-S",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "820258586",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_y571hj",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Red-L",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "475517511",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_ajy38p",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Red-M",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "992779081",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_guu6r7",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P006-Red-S",
+      "splitSku": "P006",
+      "type": "A-胸背带",
+      "itemId": "604323162",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_0g5pl5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0206-L-2C",
+      "splitSku": "P0206",
+      "type": "D-狗咬胶",
+      "itemId": "791701779",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_pu6m88",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0206-L-3C",
+      "splitSku": "P0206",
+      "type": "D-狗咬胶",
+      "itemId": "621298253",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_r0xh90",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0206-M-2C",
+      "splitSku": "P0206",
+      "type": "D-狗咬胶",
+      "itemId": "342204681",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_felq3l",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0206-M-3C",
+      "splitSku": "P0206",
+      "type": "D-狗咬胶",
+      "itemId": "263907449",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_e7piqi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0207-BLUE",
+      "splitSku": "P0207",
+      "type": "D-狗咬胶",
+      "itemId": "799459607",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_sn2bw0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0207-RED",
+      "splitSku": "P0207",
+      "type": "D-狗咬胶",
+      "itemId": "686104559",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_rw9j1l",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0208-BLUE",
+      "splitSku": "P0208",
+      "type": "D-狗咬胶",
+      "itemId": "641072490",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_bnih36",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0208-GREEN",
+      "splitSku": "P0208",
+      "type": "D-狗咬胶",
+      "itemId": "393993768",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_vi84tk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0208-RED",
+      "splitSku": "P0208",
+      "type": "D-狗咬胶",
+      "itemId": "226668546",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_iioncm",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0209-Blue-1",
+      "splitSku": "P0209",
+      "type": "D-狗咬胶",
+      "itemId": "563211608",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_cnwhg7",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0209-Green-1",
+      "splitSku": "P0209",
+      "type": "D-狗咬胶",
+      "itemId": "406501621",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_xacyin",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0209-Red-1",
+      "splitSku": "P0209",
+      "type": "D-狗咬胶",
+      "itemId": "184623864",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_tp5wpg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0210-RED",
+      "splitSku": "P0210",
+      "type": "D-狗咬胶",
+      "itemId": "565141084",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zn16eb",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0210-WHITE",
+      "splitSku": "P0210",
+      "type": "D-狗咬胶",
+      "itemId": "549994511",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_sjooz5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0211-BLUE",
+      "splitSku": "P0211",
+      "type": "D-狗咬胶",
+      "itemId": "883281869",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_sswj2f",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0211-GREEN",
+      "splitSku": "P0211",
+      "type": "D-狗咬胶",
+      "itemId": "307878055",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_qy0gfu",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0211-Red",
+      "splitSku": "P0211",
+      "type": "D-狗咬胶",
+      "itemId": "232989765",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_6cgttx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0213",
+      "splitSku": "P0213",
+      "type": "D-狗咬胶",
+      "itemId": "1272556456",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_x5ieom",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0216",
+      "splitSku": "P0216",
+      "type": "D-狗咬胶",
+      "itemId": "1319493909",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zz749s",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0229-Blue",
+      "splitSku": "P0229",
+      "type": "D-狗咬胶",
+      "itemId": "5679162662",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_nw6h3i",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0229-Green",
+      "splitSku": "P0229",
+      "type": "D-狗咬胶",
+      "itemId": "5527277167",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_d61cbm",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0229-Red",
+      "splitSku": "P0229",
+      "type": "D-狗咬胶",
+      "itemId": "5687318967",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_d0ut9s",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0230-Blue",
+      "splitSku": "P0230",
+      "type": "D-狗咬胶",
+      "itemId": "5192697564",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_u6k480",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0230-Green",
+      "splitSku": "P0230",
+      "type": "D-狗咬胶",
+      "itemId": "5242915269",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_2fxa1j",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0230-Red",
+      "splitSku": "P0230",
+      "type": "D-狗咬胶",
+      "itemId": "5193830826",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3qu92m",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0239",
+      "splitSku": "P0239",
+      "type": "D-狗咬胶",
+      "itemId": "13973555003",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_9ukzkc",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0240",
+      "splitSku": "P0240",
+      "type": "D-狗咬胶",
+      "itemId": "13952911304",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_nbsyyl",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0242",
+      "splitSku": "P0242",
+      "type": "D-狗咬胶",
+      "itemId": "14295709323",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_12ylxg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0285",
+      "splitSku": "P0285",
+      "type": "C-章鱼玩具",
+      "itemId": "7277220479",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_onkmef",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0295",
+      "splitSku": "P0295",
+      "type": "猫抓板",
+      "itemId": "5269246945",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_c6yi8i",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0298",
+      "splitSku": "P0298",
+      "type": "C-玩具套装",
+      "itemId": "5663525176",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_j2sflk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-PT002",
+      "splitSku": "PT002",
+      "type": "C-玩具套装",
+      "itemId": "13274172640",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_hf2vr5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-PT003",
+      "splitSku": "PT003",
+      "type": "C-玩具套装",
+      "itemId": "13056764294",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_t6qty0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WF03",
+      "splitSku": "WF03",
+      "type": "E-喂水器",
+      "itemId": "5322909537",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_eidfxl",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "U33",
+      "splitSku": "U33",
+      "type": "G-超声波",
+      "itemId": "945943799",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_ts0iaf",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "U33-Gray",
+      "splitSku": "U33",
+      "type": "G-超声波",
+      "itemId": "1415021324",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_qf0s5a",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "U56U",
+      "splitSku": "U56U",
+      "type": "G-超声波",
+      "itemId": "5041038191",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_lcrpj5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "U60",
+      "splitSku": "U60",
+      "type": "F-超声波止吠器",
+      "itemId": "5971442944",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_apjj8e",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "WF02-Blue",
+      "splitSku": "WF02",
+      "type": "E-喂水器",
+      "itemId": "1761745648",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_a7680s",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "WF02-Pink",
+      "splitSku": "WF02",
+      "type": "E-喂水器",
+      "itemId": "1363941843",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_czznqs",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "WF02-White",
+      "splitSku": "WF02",
+      "type": "E-喂水器",
+      "itemId": "1991667719",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_8lutyi",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "WF06-Blue",
+      "splitSku": "WF06",
+      "type": "E-喂水器",
+      "itemId": "5380869642",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_am619a",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "WF06-White",
+      "splitSku": "WF06",
+      "type": "E-喂水器",
+      "itemId": "5380901611",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_ok8cvk",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "X12",
+      "splitSku": "X12",
+      "type": "加湿器",
+      "itemId": "1142221271",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_k83qkm",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3022-Purple-S",
+      "splitSku": "P3022",
+      "type": "A-胸背带 外购",
+      "itemId": "14853364997",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_z10yui",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3022-Purple-M",
+      "splitSku": "P3022",
+      "type": "A-胸背带 外购",
+      "itemId": "14853761216",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_03fv4d",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3022-Pink-S",
+      "splitSku": "P3022",
+      "type": "A-胸背带 外购",
+      "itemId": "14870655886",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_kt7w1d",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3022-Pink-M",
+      "splitSku": "P3022",
+      "type": "A-胸背带 外购",
+      "itemId": "14856368291",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_69fa9c",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3022-Blue-S",
+      "splitSku": "P3022",
+      "type": "A-胸背带 外购",
+      "itemId": "14803572640",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3fzvs2",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3022-Blue-M",
+      "splitSku": "P3022",
+      "type": "A-胸背带 外购",
+      "itemId": "14856268590",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_nrcu0q",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Green-S",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "15421609408",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_rdo6h1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Green-M",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "15420017014",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_p8tt12",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Green-L",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "5978393579",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_35ozgx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Green-XL",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "15462955171",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3rakwu",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Purple-S",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "15378616421",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_dirwtg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Purple-M",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "15415200351",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_pkdbw5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Purple-L",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "15405701597",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_u7ci7i",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5005-Purple-XL",
+      "splitSku": "5005",
+      "type": "A-凉感背心",
+      "itemId": "15443764401",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zcej0z",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0298-White Dogs",
+      "splitSku": "PT1010",
+      "type": "C-玩具套装",
+      "itemId": "15283756629",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3xlsmp",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-913-Purple",
+      "splitSku": "913",
+      "type": "E-训狗器",
+      "itemId": "15420214755",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_j4nnwt",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Red-L",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "14997150812",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_c4no11",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Red-M",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "14997250544",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_ep5ofe",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Red-XL",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "15009104443",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_nrlp2k",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "P3005S-Red-S",
+      "splitSku": "P3005S",
+      "type": "A-胸背带",
+      "itemId": "15011003736",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_2lkrye",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "WF02-24-Black",
+      "splitSku": "WF02-24-Black",
+      "type": "Z-过滤棉",
+      "itemId": "",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_1zdyow",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Beige-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16360168331",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_hzpig9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Beige-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16344270237",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_vt5o0v",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Beige-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16330350769",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_5kz1ba",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Beige-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16316874998",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3awvl0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Rose red-S",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16356007920",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_obhtgh",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Rose red-M",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16370510568",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_pbghbd",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Rose red-L",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16356954969",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_wrx8il",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "PET3007B-Rose red-XL",
+      "splitSku": "PET1005",
+      "type": "A-胸背带",
+      "itemId": "16369606049",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_i9x9vn",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0246-Blue",
+      "splitSku": "P0246",
+      "type": "D-狗咬胶",
+      "itemId": "16452766403",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_ytd176",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0246-Green",
+      "splitSku": "P0246",
+      "type": "D-狗咬胶",
+      "itemId": "16503103403",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_cllzhr",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0248-Green",
+      "splitSku": "P0248",
+      "type": "D-狗咬胶",
+      "itemId": "16143670191",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_tzrb0c",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0248-Blue",
+      "splitSku": "P0248",
+      "type": "D-狗咬胶",
+      "itemId": "16136203926",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_0bsbqn",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WB1003",
+      "splitSku": "WB1003",
+      "type": "C-猫窝",
+      "itemId": "16860770235",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_gn23l4",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WB1002-Blue-S",
+      "splitSku": "WB1002",
+      "type": "C-狗窝",
+      "itemId": "16853420593",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_kysd2j",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WB1002-Blue-M",
+      "splitSku": "WB1002",
+      "type": "C-狗窝",
+      "itemId": "16883606363",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_s422ky",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-GREEN-M1",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "749118124",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3oclbd",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WT1011-Rabbit-1",
+      "splitSku": "WT1011",
+      "type": "C-玩具套装",
+      "itemId": "17162923829",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_8y1eb5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WT2010-1",
+      "splitSku": "WT2010",
+      "type": "C-玩具套装",
+      "itemId": "17231005991",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_u82xvb",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Blue-XS-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17261821787",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_p3no69",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Blue-S-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17286908182",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_nvsiqr",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Blue-M-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17261372142",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_krob7d",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Pink-XS-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17261372148",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_4xlaer",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Pink-S-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17287670919",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zobo6y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Pink-M-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17261871506",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zshxnq",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Purple-XS-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17295653127",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_09bzue",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Purple-S-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17256274831",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_lpgyz7",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WH2001-Purple-M-9",
+      "splitSku": "WH2001",
+      "type": "A-胸背带 外购",
+      "itemId": "17261372147",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_a8qudc",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0240-Red",
+      "splitSku": "P0240",
+      "type": "D-狗咬胶",
+      "itemId": "16788555004",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_etmt69",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0240-Green",
+      "splitSku": "P0240",
+      "type": "D-狗咬胶",
+      "itemId": "16724671289",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_za2290",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P0240-Orange",
+      "splitSku": "P0240",
+      "type": "D-狗咬胶",
+      "itemId": "16749467136",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_39t4wq",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-Christmas-10-1",
+      "splitSku": "WT3001",
+      "type": "C-玩具套装",
+      "itemId": "17231005688",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_xmdt1y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-MC466G",
+      "splitSku": "MC466G",
+      "type": "F-超声波止吠器",
+      "itemId": "17638005180",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_e7gq58",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-F383",
+      "splitSku": "F383",
+      "type": "F-电子围栏",
+      "itemId": "18180454130",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_f90rwe",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Black-S",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17157962647",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_wccc4y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Black-M",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17140900216",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_b3njca",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Black-L",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17121159347",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_7u0ljy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Black-XL",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17140850337",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_g939g9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Black-XXL",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17121159344",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_5umek3",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Red-S",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17140850343",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_zub50d",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Red-M",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17121159348",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_qy8qb9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Red-L",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17140750968",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_dq2yn1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Red-XL",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17132301327",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_enmz07",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Red-XXL",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17110723219",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_4fkzvu",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Blue-S",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17126572042",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_73y7zf",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Blue-M",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17158758383",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_3zncew",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Blue-L",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17167307765",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_tgpyvw",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Blue-XL",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17132301330",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_5lofdr",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5002-Blue-XXL",
+      "splitSku": "5002",
+      "type": "A-宠物棉衣",
+      "itemId": "17178464109",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_7ioe0c",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "DC5200-ORANGE-M1",
+      "splitSku": "DC5200",
+      "type": "I-发光项圈",
+      "itemId": "237661858",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_42l3vp",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-369",
+      "splitSku": "369",
+      "type": "E-训狗器",
+      "itemId": "19669508127",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_rgxf4m",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Blue-S",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20274820926",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_k1qmnf",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Blue-M",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20248051874",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_deuflp",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Blue-L",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20274770349",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_ukljze",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Blue-XL",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20272669848",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_cjvjp0",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Gray-S",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20272669857",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_qurge5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Gray-M",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20286708581",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_22o1q5",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Gray-L",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20289615538",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_pwpvdy",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Gray-XL",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20251822048",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_dtyx9h",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Pink-S",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20303552320",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_7mlxse",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Pink-M",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20303464578",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_a79bge",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Pink-L",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20323010889",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_n0hxm1",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-5003-Pink-XL",
+      "splitSku": "5003",
+      "type": "A-宠物浴袍",
+      "itemId": "20251822049",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_hjuw66",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Blue-XS",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "20252423669",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_yp4ay9",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Blue-S",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "14803572640",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_v5pgas",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Blue-M",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "14856268590",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_wplr39",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Blue-L",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "20232266782",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_ljnzqx",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Black-XS",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "20313305170",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_k3uanq",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Black-S",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "14853364997",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_2tqiba",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Black-M",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "14853761216",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_q4z8hd",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Black-L",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "20321306974",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_kykqfg",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Pink-XS",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "20255674070",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_cm5uyc",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Pink-S",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "14870655886",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_eur46y",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Pink-M",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "14856368291",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_vgkvwt",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-P3029S-Pink-L",
+      "splitSku": "P3029S",
+      "type": "A-胸背带",
+      "itemId": "20302864634",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792462992317_e7e3vp",
+      "userId": "u_1792462964568_a1xm1",
+      "originalSku": "TZ-WG1007",
+      "splitSku": "WG1007",
+      "type": "磨甲器",
+      "itemId": "19603174522",
+      "createdAt": "2026-10-20T02:23:12.316Z",
+      "updatedAt": "2026-10-20T02:23:12.316Z"
+    },
+    {
+      "id": "prod_1792463051815_dsyiqt",
       "userId": "test_user_alpha",
       "originalSku": "ALPHA-001",
       "splitSku": "",
       "type": "AlphaType",
       "itemId": "",
-      "createdAt": "2026-10-20T02:01:20.975Z",
-      "updatedAt": "2026-10-20T02:01:20.975Z"
+      "createdAt": "2026-10-20T02:24:11.814Z",
+      "updatedAt": "2026-10-20T02:24:11.814Z"
     },
     {
-      "id": "prod_1792461680976_tiyfj3",
+      "id": "prod_1792463051815_kslybf",
       "userId": "test_user_beta",
       "originalSku": "BETA-001",
       "splitSku": "",
       "type": "BetaType",
       "itemId": "",
-      "createdAt": "2026-10-20T02:01:20.976Z",
-      "updatedAt": "2026-10-20T02:01:20.976Z"
+      "createdAt": "2026-10-20T02:24:11.815Z",
+      "updatedAt": "2026-10-20T02:24:11.815Z"
     }
   ],
   "activities": [
@@ -5767,6 +10287,85 @@
       "updatedAt": "2026-10-20T02:00:26.948Z"
     }
   ],
-  "importJobs": [],
-  "auditLogs": []
+  "importJobs": [
+    {
+      "userId": "u_1792462964568_a1xm1",
+      "fileName": "产品表.xlsx",
+      "fileType": "product",
+      "mode": "replace",
+      "totalRows": 460,
+      "successRows": 460,
+      "errorRows": 0,
+      "status": "completed",
+      "errorSummary": "成功导入 460 条产品数据（其中更新覆盖 12 条）",
+      "id": "job_1792462992317_xjsm",
+      "createdAt": "2026-10-20T02:23:12.317Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_1792463047744_h1u0",
+      "userId": "u_1792463047743_gq6vr",
+      "userEmail": "ran_test@cyclepro.com",
+      "action": "USER_REGISTER",
+      "entityType": "auth",
+      "details": {
+        "email": "ran_test@cyclepro.com",
+        "role": "manager"
+      },
+      "createdAt": "2026-10-20T02:24:07.744Z"
+    },
+    {
+      "id": "log_1792462992317_7tze",
+      "userId": "u_1792462964568_a1xm1",
+      "userEmail": "ran879609@gmail.com",
+      "action": "PRODUCT_REPLACE",
+      "entityType": "product",
+      "details": {
+        "rowCount": 460,
+        "result": {
+          "successCount": 460,
+          "replacedCount": 12
+        },
+        "jobId": "job_1792462992317_xjsm"
+      },
+      "createdAt": "2026-10-20T02:23:12.317Z"
+    },
+    {
+      "id": "log_1792462964568_h98f",
+      "userId": "u_1792462964568_a1xm1",
+      "userEmail": "ran879609@gmail.com",
+      "action": "USER_REGISTER",
+      "entityType": "auth",
+      "details": {
+        "email": "ran879609@gmail.com",
+        "role": "admin"
+      },
+      "createdAt": "2026-10-20T02:22:44.568Z"
+    },
+    {
+      "id": "log_1792462882363_r0t2",
+      "userId": "u_1792462882363_gei76",
+      "userEmail": "test2@example.com",
+      "action": "USER_REGISTER",
+      "entityType": "auth",
+      "details": {
+        "email": "test2@example.com",
+        "role": "manager"
+      },
+      "createdAt": "2026-10-20T02:21:22.363Z"
+    },
+    {
+      "id": "log_1792462830044_cv2j",
+      "userId": "u_1792462830043_27xtj",
+      "userEmail": "test@example.com",
+      "action": "USER_REGISTER",
+      "entityType": "auth",
+      "details": {
+        "email": "test@example.com",
+        "role": "manager"
+      },
+      "createdAt": "2026-10-20T02:20:30.045Z"
+    }
+  ]
 }
