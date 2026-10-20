@@ -1,0 +1,6 @@
+{
+  "name": "CyclePro Pro — 活动产品周期分析与智能提报管理系统",
+  "description": "专业企业级活动产品周期分析与智能提报管理系统。支持SKU生命周期监控、智能连续提报研判、批量导入导出、云端持久化存储与RBAC权限管理。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
