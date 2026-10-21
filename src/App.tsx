@@ -807,6 +807,8 @@ export default function App() {
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         currentUser={currentUser}
+        productCount={products.length}
+        activityCount={activities.length}
         onAuthSuccess={(user) => {
           setCurrentUser(user);
           loadData();

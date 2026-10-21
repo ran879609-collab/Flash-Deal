@@ -219,33 +219,130 @@ export class ApiService {
   }
 
   // ==========================================
-  // Cross-Browser Account Sync Key
+  // Cross-Browser Account & Full Data Sync Key
   // ==========================================
-  public static exportAccountSyncCode(): string {
+  public static exportAccountSyncCode(includeData: boolean = true): string {
     const currentUser = localStorage.getItem(USER_KEY);
     const users = localStorage.getItem(USERS_STORAGE_KEY);
     const prods = localStorage.getItem(PRODUCTS_STORAGE_KEY);
     const acts = localStorage.getItem(ACTIVITIES_STORAGE_KEY);
+    const supabase = localStorage.getItem('cyclepro_supabase_config_v3');
+
+    const products = prods ? JSON.parse(prods) : [];
+    const activities = acts ? JSON.parse(acts) : [];
 
     const payload = {
       v: 3,
+      type: 'cyclepro_full_sync',
       time: Date.now(),
       currentUser: currentUser ? JSON.parse(currentUser) : null,
       users: users ? JSON.parse(users) : [],
-      productsCount: prods ? JSON.parse(prods).length : 0,
+      products: includeData ? products : [],
+      activities: includeData ? activities : [],
+      productsCount: products.length,
+      activitiesCount: activities.length,
+      supabaseConfig: supabase ? JSON.parse(supabase) : null,
     };
 
     return btoa(encodeURIComponent(JSON.stringify(payload)));
   }
 
-  public static importAccountSyncCode(code: string): { user: UserProfile } {
+  public static exportSyncPackageJSON(): string {
+    const currentUser = localStorage.getItem(USER_KEY);
+    const users = localStorage.getItem(USERS_STORAGE_KEY);
+    const prods = localStorage.getItem(PRODUCTS_STORAGE_KEY);
+    const acts = localStorage.getItem(ACTIVITIES_STORAGE_KEY);
+    const supabase = localStorage.getItem('cyclepro_supabase_config_v3');
+
+    const products = prods ? JSON.parse(prods) : [];
+    const activities = acts ? JSON.parse(acts) : [];
+
+    const payload = {
+      v: 3,
+      type: 'cyclepro_full_sync',
+      time: Date.now(),
+      exportDate: new Date().toISOString(),
+      currentUser: currentUser ? JSON.parse(currentUser) : null,
+      users: users ? JSON.parse(users) : [],
+      products,
+      activities,
+      productsCount: products.length,
+      activitiesCount: activities.length,
+      supabaseConfig: supabase ? JSON.parse(supabase) : null,
+    };
+
+    return JSON.stringify(payload, null, 2);
+  }
+
+  public static parseSyncCodePreview(input: string | object): {
+    isValid: boolean;
+    user?: UserProfile;
+    productsCount: number;
+    activitiesCount: number;
+    exportTime?: string;
+    error?: string;
+  } {
     try {
-      const decoded = decodeURIComponent(atob(code.trim()));
-      const parsed = JSON.parse(decoded);
-      if (!parsed.currentUser) {
-        throw new Error('无效的同步密钥：未包含有效用户身份');
+      let parsed: any;
+      if (typeof input === 'object' && input !== null) {
+        parsed = input;
+      } else {
+        const trimmed = (input as string).trim();
+        if (trimmed.startsWith('{')) {
+          parsed = JSON.parse(trimmed);
+        } else {
+          parsed = JSON.parse(decodeURIComponent(atob(trimmed)));
+        }
       }
 
+      if (!parsed.currentUser && !parsed.user) {
+        return { isValid: false, productsCount: 0, activitiesCount: 0, error: '未识别到有效账户' };
+      }
+
+      const user = parsed.currentUser || parsed.user;
+      const pCount = Array.isArray(parsed.products)
+        ? parsed.products.length
+        : parsed.productsCount || 0;
+      const aCount = Array.isArray(parsed.activities)
+        ? parsed.activities.length
+        : parsed.activitiesCount || 0;
+
+      return {
+        isValid: true,
+        user,
+        productsCount: pCount,
+        activitiesCount: aCount,
+        exportTime: parsed.time ? new Date(parsed.time).toLocaleString('zh-CN') : undefined,
+      };
+    } catch (e: any) {
+      return { isValid: false, productsCount: 0, activitiesCount: 0, error: e.message || '格式错误' };
+    }
+  }
+
+  public static importAccountSyncCode(codeOrJson: string | object): {
+    user: UserProfile;
+    productsCount: number;
+    activitiesCount: number;
+  } {
+    try {
+      let parsed: any;
+      if (typeof codeOrJson === 'object' && codeOrJson !== null) {
+        parsed = codeOrJson;
+      } else {
+        const trimmed = (codeOrJson as string).trim();
+        if (trimmed.startsWith('{')) {
+          parsed = JSON.parse(trimmed);
+        } else {
+          parsed = JSON.parse(decodeURIComponent(atob(trimmed)));
+        }
+      }
+
+      const user = parsed.currentUser || parsed.user;
+      if (!user) {
+        throw new Error('无效的同步数据：未包含有效用户身份');
+      }
+
+      // 1. Restore registered users so login with password works in this browser
       const users = this.getStoredUsers();
       if (Array.isArray(parsed.users)) {
         parsed.users.forEach((u: any) => {
@@ -255,11 +352,39 @@ export class ApiService {
         });
       }
 
-      this.setToken(`sync_token_${Date.now()}`);
-      localStorage.setItem(USER_KEY, JSON.stringify(parsed.currentUser));
-      return { user: parsed.currentUser };
+      // 2. Set current active user & token
+      this.setToken(`sync_token_${Date.now()}_${user.id || 'u'}`);
+      localStorage.setItem(USER_KEY, JSON.stringify(user));
+
+      // 3. Restore Products Data
+      let productsCount = 0;
+      if (Array.isArray(parsed.products) && parsed.products.length > 0) {
+        localStorage.setItem(PRODUCTS_STORAGE_KEY, JSON.stringify(parsed.products));
+        productsCount = parsed.products.length;
+      }
+
+      // 4. Restore Activities Data
+      let activitiesCount = 0;
+      if (Array.isArray(parsed.activities) && parsed.activities.length > 0) {
+        localStorage.setItem(ACTIVITIES_STORAGE_KEY, JSON.stringify(parsed.activities));
+        activitiesCount = parsed.activities.length;
+      }
+
+      // 5. Mark as initialized so demo data won't overwrite user data
+      localStorage.setItem('cyclepro_data_initialized', 'true');
+
+      // 6. Restore Supabase config if present
+      if (parsed.supabaseConfig && parsed.supabaseConfig.url) {
+        localStorage.setItem('cyclepro_supabase_config_v3', JSON.stringify(parsed.supabaseConfig));
+      }
+
+      return {
+        user,
+        productsCount,
+        activitiesCount,
+      };
     } catch (err: any) {
-      throw new Error(`同步码解析失败: ${err.message || '请确认同步码完整复制'}`);
+      throw new Error(`同步数据解析失败: ${err.message || '请确认同步码或文件完整'}`);
     }
   }
 
@@ -521,11 +646,13 @@ export class ApiService {
     // 3. Fallback to Local Storage / Demo Data
     const prodsRaw = localStorage.getItem(PRODUCTS_STORAGE_KEY);
     const actsRaw = localStorage.getItem(ACTIVITIES_STORAGE_KEY);
+    const isInitialized = localStorage.getItem('cyclepro_data_initialized') === 'true';
 
     let products: ProductRecord[] = prodsRaw ? JSON.parse(prodsRaw) : [];
     let activities: ActivityRecord[] = actsRaw ? JSON.parse(actsRaw) : [];
 
-    if (products.length === 0 && activities.length === 0) {
+    // Only inject demo data for first-time visitors who haven't initialized or imported anything
+    if (!isInitialized && products.length === 0 && activities.length === 0) {
       products = DEFAULT_PRODUCTS.map((p, idx) => ({
         id: `p_demo_${idx + 1}`,
         userId: 'u_manager_002',
@@ -612,6 +739,7 @@ export class ApiService {
 
     const updated = Array.from(map.values());
     localStorage.setItem(PRODUCTS_STORAGE_KEY, JSON.stringify(updated));
+    localStorage.setItem('cyclepro_data_initialized', 'true');
 
     return {
       success: true,
@@ -695,6 +823,7 @@ export class ApiService {
 
     const updated = Array.from(map.values());
     localStorage.setItem(ACTIVITIES_STORAGE_KEY, JSON.stringify(updated));
+    localStorage.setItem('cyclepro_data_initialized', 'true');
 
     return {
       success: true,

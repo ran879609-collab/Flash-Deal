@@ -17,6 +17,7 @@ import {
   ShieldAlert,
   Cloud,
   Key,
+  Copy,
 } from 'lucide-react';
 
 interface Props {
@@ -68,6 +69,12 @@ export const DataManagementModal: React.FC<Props> = ({
   // Restore state
   const [isRestoring, setIsRestoring] = useState(false);
   const [restoreMsg, setRestoreMsg] = useState<string | null>(null);
+
+  // Quick Cross-Browser Sync State
+  const [syncCodeInput, setSyncCodeInput] = useState('');
+  const [copiedSyncCode, setCopiedSyncCode] = useState(false);
+  const [showSyncInput, setShowSyncInput] = useState(false);
+  const [syncCodeStatus, setSyncCodeStatus] = useState<string | null>(null);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -124,6 +131,17 @@ export const DataManagementModal: React.FC<Props> = ({
         setIsRestoring(true);
         setRestoreMsg(null);
         const json = JSON.parse(event.target?.result as string);
+        
+        // If it's a full sync package:
+        if (json.version?.includes('CyclePro-Full-Sync') || (json.user && json.products)) {
+          const res = ApiService.importAccountSyncCode(JSON.stringify(json));
+          setRestoreMsg(
+            `✅ 跨设备完整同步包导入成功！已恢复账户 ${res.user?.name || res.user?.email || ''} 及 ${res.productsCount} 条产品与 ${res.activitiesCount} 条活动数据`
+          );
+          onDataReset();
+          return;
+        }
+
         const data = json.data || json;
         const res = await ApiService.restoreBackup(data, 'replace');
         setRestoreMsg(res.message);
@@ -135,6 +153,53 @@ export const DataManagementModal: React.FC<Props> = ({
       }
     };
     reader.readAsText(file);
+  };
+
+  // Cross-Browser Sync handlers
+  const handleCopySyncCode = () => {
+    try {
+      const code = ApiService.exportAccountSyncCode(true);
+      navigator.clipboard.writeText(code);
+      setCopiedSyncCode(true);
+      setSyncCodeStatus('✅ 跨设备完整数据同步码已复制到剪贴板！可前往新浏览器无缝还原全部账户与数据。');
+      setTimeout(() => setCopiedSyncCode(false), 3500);
+    } catch (err: any) {
+      setSyncCodeStatus(`❌ 导出失败: ${err.message}`);
+    }
+  };
+
+  const handleDownloadSyncFile = () => {
+    try {
+      const jsonStr = ApiService.exportSyncPackageJSON();
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `CyclePro_完整同步包_${currentUser?.name || currentUser?.email || 'user'}_${new Date().toISOString().slice(0, 10)}.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+      setSyncCodeStatus('✅ 完整数据同步文件已生成并下载！在新浏览器上传该文件即可一键还原。');
+    } catch (err: any) {
+      setSyncCodeStatus(`❌ 导出失败: ${err.message}`);
+    }
+  };
+
+  const handleApplySyncCode = () => {
+    if (!syncCodeInput.trim()) {
+      setSyncCodeStatus('⚠️ 请先粘贴同步码');
+      return;
+    }
+    try {
+      const result = ApiService.importAccountSyncCode(syncCodeInput.trim());
+      setSyncCodeStatus(
+        `🎉 同步成功！已导入账户【${result.user?.name || result.user?.email || ''}】以及 ${result.productsCount} 条产品、${result.activitiesCount} 条活动记录。`
+      );
+      setSyncCodeInput('');
+      setShowSyncInput(false);
+      onDataReset();
+    } catch (err: any) {
+      setSyncCodeStatus(`❌ 同步失败: ${err.message}`);
+    }
   };
 
   // Save Supabase Configuration
@@ -339,6 +404,81 @@ export const DataManagementModal: React.FC<Props> = ({
                   <div className="p-3 bg-blue-50 border border-blue-200 text-blue-800 rounded-xl text-xs flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
                     <span>{restoreMsg}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Cross-Browser Full Sync Panel */}
+              <div className="p-5 border border-indigo-200/90 rounded-xl bg-gradient-to-br from-indigo-50/50 via-white to-sky-50/40 space-y-4 shadow-xs">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="font-semibold text-slate-900 text-sm flex items-center gap-2">
+                      <Key className="w-4 h-4 text-indigo-600" />
+                      跨浏览器 / 跨设备数据无缝同步
+                    </h3>
+                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      💡 <strong>为什么换了浏览器数据不见了？</strong> 静态运行环境下，原浏览器上传的 Excel 数据存储在原浏览器的缓存中。
+                      使用此功能可将当前浏览器中的<strong>全部账户、{productCount} 条产品与 {activityCount} 条活动记录</strong>一键打包传输至新浏览器！
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2.5 pt-1">
+                  <button
+                    onClick={handleCopySyncCode}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-xs transition"
+                  >
+                    <Copy className="w-3.5 h-3.5" />
+                    {copiedSyncCode ? '已复制同步码！' : '一键复制全量同步码'}
+                  </button>
+
+                  <button
+                    onClick={handleDownloadSyncFile}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium text-indigo-700 bg-indigo-100/80 hover:bg-indigo-200/80 rounded-xl transition"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    下载同步包文件 (.json)
+                  </button>
+
+                  <button
+                    onClick={() => setShowSyncInput(!showSyncInput)}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-xl transition"
+                  >
+                    <Upload className="w-3.5 h-3.5 text-slate-500" />
+                    {showSyncInput ? '收起导入框' : '在当前浏览器导入其他设备数据'}
+                  </button>
+                </div>
+
+                {showSyncInput && (
+                  <div className="p-4 bg-white border border-indigo-100 rounded-xl space-y-3 mt-3 animate-in fade-in duration-200">
+                    <span className="text-xs font-semibold text-slate-800 block">
+                      粘贴来自原浏览器的同步码：
+                    </span>
+                    <textarea
+                      rows={3}
+                      value={syncCodeInput}
+                      onChange={(e) => setSyncCodeInput(e.target.value)}
+                      placeholder="在此处粘贴从原浏览器复制的同步码..."
+                      className="w-full text-xs font-mono p-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] text-slate-500">
+                        导入后将自动合并并恢复账户及所有产品和活动记录。
+                      </span>
+                      <button
+                        onClick={handleApplySyncCode}
+                        className="px-4 py-1.5 text-xs font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-xs transition"
+                      >
+                        确认执行导入
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {syncCodeStatus && (
+                  <div className="p-3 bg-indigo-50/90 border border-indigo-200 text-indigo-900 rounded-xl text-xs flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-600 shrink-0" />
+                    <span>{syncCodeStatus}</span>
                   </div>
                 )}
               </div>
