@@ -14,7 +14,7 @@ const COL_WIDTH_SKU = 190;
 const COL_WIDTH_SUB_ID = 110;
 const COL_WIDTH_WEEK = 110;
 const COL_WIDTH_STATUS = 130;
-const COL_WIDTH_RECOMMEND = 170;
+const COL_WIDTH_RECOMMEND = 300;
 
 const ROW_HEIGHT = 44; // px per row
 
@@ -175,9 +175,9 @@ export const VirtualizedCycleTable: React.FC<Props> = ({
                   minWidth: `${COL_WIDTH_RECOMMEND}px`,
                   maxWidth: `${COL_WIDTH_RECOMMEND}px`,
                 }}
-                className="py-3 px-3.5 text-center bg-slate-50 sticky top-0 z-20 border-b-2 border-slate-200 text-slate-800 text-[11px] font-semibold uppercase tracking-wider"
+                className="py-3 px-4 text-left bg-slate-50 sticky top-0 z-20 border-b-2 border-slate-200 text-slate-800 text-[11px] font-semibold uppercase tracking-wider"
               >
-                提报建议
+                提报建议 / 原因说明
               </th>
             </tr>
           </thead>
@@ -236,8 +236,7 @@ export const VirtualizedCycleTable: React.FC<Props> = ({
                 return (
                   <tr
                     key={row.sku}
-                    className={`h-[44px] transition-colors ${rowBg}`}
-                    style={{ height: `${ROW_HEIGHT}px` }}
+                    className={`min-h-[44px] transition-colors ${rowBg}`}
                   >
                     {/* 1. Product Type */}
                     <td
@@ -358,20 +357,28 @@ export const VirtualizedCycleTable: React.FC<Props> = ({
                         minWidth: `${COL_WIDTH_RECOMMEND}px`,
                         maxWidth: `${COL_WIDTH_RECOMMEND}px`,
                       }}
-                      className="px-3.5 text-center border-b border-slate-100"
+                      className="px-4 py-2 text-left border-b border-slate-100"
                     >
                       {isRecommend ? (
-                        <span className="inline-flex items-center gap-1 text-emerald-700 font-semibold text-xs bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                          <Sparkles className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                          建议提报
-                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className="inline-flex items-center gap-1 text-emerald-700 font-semibold text-xs bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 shrink-0">
+                            <Sparkles className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                            建议提报
+                          </span>
+                          <span
+                            className="text-[11px] text-slate-500 font-normal leading-snug break-words"
+                            title={row.info.reason}
+                          >
+                            {row.info.reason}
+                          </span>
+                        </div>
                       ) : (
-                        <span
-                          className="text-slate-500 text-xs truncate max-w-[150px] inline-block"
+                        <div
+                          className="text-xs text-slate-600 leading-snug break-words"
                           title={row.info.reason}
                         >
                           {row.info.reason}
-                        </span>
+                        </div>
                       )}
                     </td>
                   </tr>
